@@ -1,0 +1,71 @@
+
+:root {
+    --main: #53CDE2;
+    --second: #D1F4FA;
+    --third: #005792;
+}
+
+
+body {
+    background: var(--third);
+    font-family: 'SF Pro Display';
+    color: #FFF;
+}
+
+.logo {
+    
+    color: #FFF;
+    font-size: 70px;
+}
+
+.logo > p > span {
+    font-weight: 100;
+}
+
+.center {
+    position: absolute;
+    margin: auto;
+}
+
+.loader {
+    border: 8px solid rgba(255, 255, 255, 0.2);
+    border-top: 8px solid var(--main);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.button {
+    background: var(--main);
+    border: 0;
+    padding: 1rem;
+    border-radius: 10rem;
+    color: #FFF;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: #D1F4FA;
+    color: #444;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.text-center {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.icon {
+    margin-top: calc(50vh / 2);
+    margin-bottom: 1rem;
+}
